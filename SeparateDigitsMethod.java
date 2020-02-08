@@ -25,10 +25,10 @@ public class SeparateDigitsMethod {
 		return remainder;
 	}
 	public static void displayDigits(int number) {
-		int k =quotient(number);
-		for(int count = number; k!=0; number/=10 ) {
+		for(int count = number; number!=0; number/=1 ) {
 			remainder(number);
 			System.out.print(remainder(number) + " ");
+			number = quotient(number);
 		}
 	}
 }
