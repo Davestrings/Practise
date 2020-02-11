@@ -12,11 +12,7 @@ public class SeparateDigitsMethod {
 	}
 	public static int quotient(int num1) {
 		int quotient = 0;
-//		while(num1 != 0) {
 			quotient = num1 / 10;
-//			num1= num1 / 10;
-//		}
-//		
 		return  quotient;
 	}
 	public static int remainder(int num1) {
