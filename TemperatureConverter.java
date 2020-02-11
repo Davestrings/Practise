@@ -15,7 +15,6 @@ public class TemperatureConverter {
 		scan.close();
 	}
 	
-	
 	public static double convertCelsius( double fahrenheit ) {
 		double celsius = 5.0 / 9.0 *(fahrenheit - 32);
 		return celsius;
@@ -29,10 +28,10 @@ public class TemperatureConverter {
 	public static void displayTemperature(int choice, double number ) {
 		switch(choice) {
 		case 1:
-			System.out.printf("Temperature in Celsius is %.3f",convertCelsius(number));
+			System.out.printf("Temperature in Celsius is %f",convertCelsius(number));
 			break;
 		case 2:
-			System.out.printf("Temperature in Fahrenheit  is %.3f",convertFahrenheit(number));
+			System.out.printf("Temperature in Fahrenheit  is %f",convertFahrenheit(number));
 			break;
 		}
 	}
